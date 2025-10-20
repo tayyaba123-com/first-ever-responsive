@@ -1,0 +1,334 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: Chillax, sans-serif;
+}
+
+body {
+  background-color: rgb(12, 11, 11);
+}
+
+section {
+  max-height: 2000px;
+}
+
+main {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  align-items: center;
+}
+main section.veiw1 {
+  padding: 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+main section.veiw1 .top {
+  width: 100%;
+}
+main section.veiw1 .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main section.veiw1 .bottom {
+  padding: 2rem;
+  border-radius: 1rem;
+  background-color: rgb(34, 33, 33);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.veiw1 .bottom p {
+  color: rgb(193, 193, 193);
+  font-weight: 200;
+}
+main section.veiw1 .bottom .discription {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+main section.veiw1 .bottom .discription h2 {
+  font-size: 2.5rem;
+  color: rgb(221, 224, 226);
+  font-weight: lighter;
+  text-transform: uppercase;
+}
+main section.veiw1 .bottom .discription p {
+  color: rgba(244, 242, 237, 0.6);
+  line-height: 2.1rem;
+  font-size: 1.3rem;
+}
+main section.veiw1 .bottom .discription button {
+  padding: 1rem;
+  color: aliceblue;
+  font-size: 1.1rem;
+  background-color: transparent;
+  cursor: pointer;
+  width: -moz-fit-content;
+  width: fit-content;
+  text-transform: uppercase;
+  border-radius: 1rem;
+}
+main section.veiw2 {
+  padding: 2rem 2.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  align-content: center;
+}
+main section.veiw2 .top, main section.veiw2 .bottom {
+  text-align: center;
+  justify-content: space-around;
+  color: white;
+  width: 100%;
+  display: flex;
+  gap: 2rem;
+}
+main section.veiw2 .top .studio-stats, main section.veiw2 .bottom .studio-stats {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+main section.veiw2 .top .studio-stats h4, main section.veiw2 .bottom .studio-stats h4 {
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  color: rgb(109, 105, 105);
+}
+main section.veiw2 .top .studio-stats span, main section.veiw2 .bottom .studio-stats span {
+  font-size: 2.4rem;
+}
+main section.veiw3 {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding: 1.1rem;
+}
+main section.veiw3 .top {
+  width: 100%;
+}
+main section.veiw3 .top img {
+  width: 100%;
+  border-radius: 1rem;
+}
+main section.veiw3 .bottom {
+  border-radius: 1rem;
+  background-color: rgb(34, 33, 33);
+  padding: 1.4rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+main section.veiw3 .bottom .text {
+  display: flex;
+  flex-direction: column;
+  gap: 1.7rem;
+}
+main section.veiw3 .bottom .text h3 {
+  font-size: 2.4rem;
+  color: white;
+  font-weight: lighter;
+  text-transform: uppercase;
+  font-weight: lighter;
+}
+main section.veiw3 .bottom .text p {
+  font-size: 1.1rem;
+  color: rgba(244, 242, 237, 0.6);
+  line-height: 1.6rem;
+}
+main section.veiw3 .bottom > p {
+  font-size: 1.1rem;
+  color: rgb(193, 193, 193);
+  font-weight: bold;
+}
+main section.veiw5 {
+  padding: 1rem 2rem;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+main section.veiw5 p {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+}
+main section.veiw5 button {
+  padding: 1.2rem;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: white;
+  background-color: transparent;
+  visibility: hidden;
+  border-radius: 1rem;
+  cursor: pointer;
+  text-transform: uppercase;
+}
+
+@media (min-width: 700px) and (max-width: 1100px) {
+  main section.veiw1 .bottom {
+    gap: 6rem;
+  }
+  main section.veiw2 .top, main section.veiw2 .bottom {
+    gap: 2rem;
+  }
+  main section.veiw2 .top .studio-stats, main section.veiw2 .bottom .studio-stats {
+    text-align: center;
+  }
+  main section.veiw2 .top .studio-stats h4, main section.veiw2 .bottom .studio-stats h4 {
+    font-size: 1.2rem;
+  }
+  main section.veiw2 .top .studio-stats span, main section.veiw2 .bottom .studio-stats span {
+    font-size: 3.2rem;
+  }
+  main section.veiw3 .bottom {
+    padding: 2rem 3rem;
+    gap: 5rem;
+  }
+  main section.veiw3 .bottom .text h3 {
+    font-size: 2.5rem;
+  }
+  main section.veiw3 .bottom .text p {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  main section.veiw5 button {
+    visibility: visible;
+  }
+}
+@media (min-width: 1101px) and (max-width: 1600px) {
+  main section.veiw1 {
+    flex-direction: row;
+  }
+  main section.veiw1 .top, main section.veiw1 .bottom {
+    width: 50%;
+  }
+  main section.veiw1 .bottom {
+    padding: 1rem 2rem;
+    justify-content: space-between;
+  }
+  main section.veiw1 .bottom .discription h2 {
+    font-size: 3.1rem;
+    line-height: 4rem;
+  }
+  main section.veiw1 .bottom .discription p {
+    font-size: 1.1rem;
+  }
+  main section.veiw2 {
+    flex-direction: row;
+  }
+  main section.veiw2 .top, main section.veiw2 .bottom {
+    flex-direction: row;
+  }
+  main section.veiw2 .top .studio-stats h4, main section.veiw2 .bottom .studio-stats h4 {
+    font-size: 0.8rem;
+  }
+  main section.veiw2 .top .studio-stats span, main section.veiw2 .bottom .studio-stats span {
+    font-size: 3rem;
+  }
+  main section.veiw3 {
+    flex-direction: row-reverse;
+  }
+  main section.veiw3 .top, main section.veiw3 .bottom {
+    width: 50%;
+  }
+  main section.veiw3 .bottom {
+    justify-content: space-between;
+  }
+  main section.veiw3 .bottom .text p {
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  main section.veiw4 {
+    flex-direction: row;
+  }
+  main section.veiw5 button {
+    visibility: visible;
+  }
+}
+@media (min-width: 1601px) {
+  main section.veiw1 {
+    flex-direction: row;
+  }
+  main section.veiw1 .top, main section.veiw1 .bottom {
+    width: 50%;
+  }
+  main section.veiw1 .bottom {
+    gap: 3rem;
+    padding: 3rem;
+    justify-content: space-between;
+  }
+  main section.veiw1 .bottom p {
+    font-size: 1.3rem;
+  }
+  main section.veiw1 .bottom .discription {
+    gap: 2rem;
+  }
+  main section.veiw1 .bottom .discription h2 {
+    font-size: 4rem;
+    line-height: 5.7rem;
+  }
+  main section.veiw1 .bottom .discription p {
+    width: 70%;
+    font-size: 1.6rem;
+    line-height: 2.8rem;
+  }
+  main section.veiw2 {
+    flex-direction: row;
+  }
+  main section.veiw2 .top, main section.veiw2 .bottom {
+    padding: 1rem 2rem;
+  }
+  main section.veiw2 .top .studio-stats span, main section.veiw2 .bottom .studio-stats span {
+    font-size: 4rem;
+  }
+  main section.veiw2 .top .studio-stats h4, main section.veiw2 .bottom .studio-stats h4 {
+    font-size: 1.2rem;
+  }
+  main section.veiw3 {
+    flex-direction: row-reverse;
+  }
+  main section.veiw3 .top, main section.veiw3 .bottom {
+    width: 50%;
+  }
+  main section.veiw3 .bottom {
+    justify-content: space-between;
+    padding: 4rem;
+  }
+  main section.veiw3 .bottom .text h3 {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+    width: 80%;
+  }
+  main section.veiw3 .bottom .text p {
+    font-size: 1.3rem;
+    -moz-column-count: 2;
+         column-count: 2;
+    -moz-column-gap: 2rem;
+         column-gap: 2rem;
+  }
+  main section.veiw4 {
+    flex-direction: row;
+  }
+  main section.veiw5 p {
+    font-size: 2.3rem;
+  }
+  main section.veiw5 button {
+    font-size: 1.2rem;
+    visibility: visible;
+  }
+}/*# sourceMappingURL=style.css.map */
