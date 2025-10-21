@@ -208,6 +208,7 @@ main{
         justify-content: space-between;
 
         p{
+        font-family: Chillax, sans-serif;
           font-size: 2rem; 
           color:white;
           text-transform: uppercase;
@@ -231,17 +232,18 @@ main{
     section.veiw6{
         padding: 1.1rem;
         width: 100%;
-        @include flex-coloum((2rem));
+        @include flex-coloum((1.3rem));
        
          
     .cards{
-        @include flex-coloum((0.6rem));
+        @include flex-coloum((0.4rem));
          justify-content: space-between;
          border-radius: 1.0rem;
          width: 100%;
          background-size: cover;
          aspect-ratio: 1/1;
-         padding: 2rem 1rem;
+         padding: 1.5rem 1rem;
+
 
         .top,.bottom{
             display: flex;
@@ -250,10 +252,10 @@ main{
         }
 
         .top{
-            padding: 1rem;
+            // padding: 0.1rem 1rem;
             justify-content: end;
             // filter: blur(4px);
-            gap: 0.4rem;
+            gap: 0.5rem;
 
             i{
                 width: fit-content;
@@ -262,38 +264,163 @@ main{
                  backdrop-filter: blur(2rem);           
                 color:rgb(186, 183, 183);
                 border-radius: 50%;
-                padding: 1rem;
+                padding: 0.8rem;
             }
         }
 
         .bottom{
             @include flex-coloum(0rem);
             flex-direction: row;
+            align-items: center;
             justify-content: space-between;
-            background:linear-gradient(to right,rgb(130, 122, 107),rgb(215, 213, 213),rgb(130, 122, 107)) ;
-              backdrop-filter: blur(2rem);
-              padding: 1.5rem;
-              font-size: 1.2rem;
+
+              backdrop-filter: blur(0.5rem);
+              padding: 1.4rem;
               border-radius: 0.5rem;
-              color: #f4f2ed;
+              text-transform: uppercase;
+
+                 p{
+                    color: #f4f2ed;
+                       font-size: 0.98rem;
+
+                  }
+
+                  p#name{
+                    font-size: 1.1rem;
+                  }
         }
+
+               
     }
 
     .card1{
       background-image: url("./veiw6img1.png");
+       
+      .bottom{
+              background:linear-gradient(to right,rgb(130, 122, 107),rgb(215, 213, 213),rgb(130, 122, 107)) ;
+
+      }
     }
 
     
     .card2{
-      background-image: url("./veiw6img1.png");
+      background-image: url("./veiw6img2.png");
+      .bottom{
+     background:linear-gradient(to right,rgb(47, 47, 47),rgb(215, 213, 213),rgb(44, 44, 44)) ;
+
+      }
+
     }
 
 
     
     .card3{
-      background-image: url("./veiw6img1.png");
+      background-image: url("./veiw6img3.png");
+
+      .bottom{
+        background:linear-gradient(to right,rgb(115, 105, 87),rgb(215, 213, 213),rgb(97, 88, 72)) ;
+
+      }
     }
 
+    }
+
+    section.veiw7{
+        width: 100%;
+         padding: 0rem  1.1rem;
+        @include flex-coloum(1rem);
+
+        .top{
+            width: 100%;
+            img{
+                width: 100%;
+                border-radius: 1.0rem;
+            }
+
+        }
+
+        .bottom{
+              padding: 2rem;
+            border-radius: 1.0rem;
+            background-color: rgb(34, 33, 33);
+            // width: 100%;
+            @include flex-coloum(1rem);
+            text-transform: uppercase;
+
+            >p{
+                font-size: 1.0rem;
+                color: #d1cccc;
+            }
+
+            .discription{
+                @include flex-coloum(3rem);
+
+                h3{
+                    width: 90%;
+                    color: #ebeae8;
+                    font-weight: 100;
+                    font-size: 1.8rem;
+                    line-height: 2.4rem;
+
+
+                }
+               
+
+                button{
+                    width: fit-content;
+                    background-color: transparent;
+                    color: #ebeae8;
+                    padding: 0.8rem 1rem;
+                    border-radius: 1.0rem;
+                    text-transform: uppercase;
+                }
+            }
+
+        }
+
+    }
+
+    section.veiw8{
+        padding: 1.1rem;
+        width: 100%;
+        
+        
+        .contact{
+            @include flex-coloum(1rem);
+         border-radius: 1.0rem;
+         padding: 1.2rem;
+          background-color: #cebd63;
+          width: 100%;
+
+            .text{
+          @include flex-coloum(1rem);
+          text-transform: uppercase;
+
+          p{
+            font-size: 0.98rem;
+            // color: rgb(62, 61, 61);
+          }
+
+          h3{
+            font-size: 1.9rem;
+            font-weight: 100;
+
+            line-height: 2.7rem;
+            width: 90%;
+          }
+        }
+
+        button{
+            text-transform: uppercase;
+            padding: 1rem;
+            border-radius: 1.0rem;
+            color: white;
+            background-color: black;
+            font-weight: 500;
+
+        }
+        }
+   
     }
 
     
@@ -363,10 +490,51 @@ main{
                 visibility: visible;
             }
         }
+          
+        section.veiw6{
+          .cards{
+             background-position: center;
+            aspect-ratio: 3/2;
+
+          }
+
+          .card1{
+            background-position: center;
+          }
+        }
+
+         section.veiw7{
+
+            
+            .bottom{
+                .discription{
+                   gap:4rem;
+                }
+               
+               
+            }
+        }
+
+        section.veiw8{
+            .contact{
+                gap:2rem;
+                .text{
+                    h3{
+                        font-size: 2.4rem;
+                        line-height: 4rem;
+                    }
+                }
+
+                button{
+                    font-size: 1.2rem;
+                }
+            }
+        }
+
     }
 }
 
-@media(min-width:1101px)and (max-width:1600px) {
+@media(min-width:1101px) and (max-width:1600px) {
     main{
         
         section.veiw1{
@@ -442,6 +610,67 @@ main{
         section.veiw5{
             button{
                 visibility: visible;
+            }
+        }
+
+        section.veiw6{
+            flex-direction: row;
+
+            .cards{
+                .bottom{
+                    padding: 1.1rem;
+                }
+            }
+        }
+
+        section.veiw7{
+         flex-direction: row;
+
+         .top,.bottom{
+            width: 50%;
+         }
+
+         .bottom{
+            
+            padding: 2rem;
+
+            .discription{
+                justify-content: space-around;
+                gap:4rem;
+
+                h3{
+                    font-size: 2.5rem;
+                    line-height: 3rem;
+                }
+             
+            }
+         }
+        }
+
+        section.veiw8{
+            .contact{
+                padding: 3rem;
+                flex-direction: row;
+                align-items: end;
+                justify-content: space-between;
+                .text{
+                    gap: 1rem;
+                    h3{
+                        font-size: 3.8rem;
+                        line-height: 4rem;
+                    }
+
+                    p{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+
+            button{
+                width: 40%;
+                font-size: 1.3rem;
+                padding: 2rem 5rem;
+
             }
         }
     }
@@ -539,12 +768,113 @@ main{
          section.veiw5{
               
             p{
-                font-size: 2.3rem;
+                font-size: 2.4rem;
             }
             button{
                 font-size: 1.2rem;
                 visibility: visible;
                 
+            }
+        }
+
+        section.veiw6{
+            flex-direction: row;
+
+            
+        }
+
+        section.veiw7{
+            flex-direction: row;
+
+            .top,.bottom{
+                width: 50%;
+            }
+
+            .bottom{
+
+                .discription{
+                
+                    gap: 18rem;
+
+
+                    h3{
+                        width: 90%;
+                        font-size: 3rem;
+                        line-height: 3.3rem;
+                    }
+                    
+                }
+            }
+        }
+
+        section.veiw8{
+            .contact{
+                padding: 3rem;
+                flex-direction: row;
+                justify-content: space-between;
+                align-items: end;
+
+                .text{
+
+                    h3{
+                        font-size: 4rem;
+                        font-weight: 500;
+                        line-height: 4.8rem;
+                    }
+
+                    p{
+                        font-size: 1.3rem;
+                    }
+                   
+                }
+
+                button{
+                    width: fit-content;
+                    font-size: 1.2rem;
+                    text-align:center;
+                    padding: 1.2rem 2rem ;
+                }
+            }
+        }
+
+
+    }
+}
+
+
+@media(min-width:980px) and (max-width:1100px){
+    main{
+       
+        section.veiw6{
+            flex-direction: row;
+            .cards{
+                padding: 1rem 0.1rem  1rem 1rem;
+                 aspect-ratio: 5/4;
+
+                 .top{
+                    gap:0.2rem;
+                    i{
+                        padding: 0.7rem;
+                        // gap:;
+                    }
+
+                 }
+
+                 .bottom{
+                    padding: 1rem;
+                 }
+                   
+            }
+        }
+
+        section.veiw8{
+            .contact{
+                gap:3rem;
+                .text{
+                    h3{
+                        font-size: 3rem;
+                    }
+                }
             }
         }
     }
