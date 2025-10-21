@@ -228,6 +228,74 @@ main{
 
     }
 
+    section.veiw6{
+        padding: 1.1rem;
+        width: 100%;
+        @include flex-coloum((2rem));
+       
+         
+    .cards{
+        @include flex-coloum((0.6rem));
+         justify-content: space-between;
+         border-radius: 1.0rem;
+         width: 100%;
+         background-size: cover;
+         aspect-ratio: 1/1;
+         padding: 2rem 1rem;
+
+        .top,.bottom{
+            display: flex;
+            // background-color: red;
+            
+        }
+
+        .top{
+            padding: 1rem;
+            justify-content: end;
+            // filter: blur(4px);
+            gap: 0.4rem;
+
+            i{
+                width: fit-content;
+                background-color: rgba(255, 255, 255, .05);
+                border: 1px solid rgb(103, 98, 98);
+                 backdrop-filter: blur(2rem);           
+                color:rgb(186, 183, 183);
+                border-radius: 50%;
+                padding: 1rem;
+            }
+        }
+
+        .bottom{
+            @include flex-coloum(0rem);
+            flex-direction: row;
+            justify-content: space-between;
+            background:linear-gradient(to right,rgb(130, 122, 107),rgb(215, 213, 213),rgb(130, 122, 107)) ;
+              backdrop-filter: blur(2rem);
+              padding: 1.5rem;
+              font-size: 1.2rem;
+              border-radius: 0.5rem;
+              color: #f4f2ed;
+        }
+    }
+
+    .card1{
+      background-image: url("./veiw6img1.png");
+    }
+
+    
+    .card2{
+      background-image: url("./veiw6img1.png");
+    }
+
+
+    
+    .card3{
+      background-image: url("./veiw6img1.png");
+    }
+
+    }
+
     
 }
 

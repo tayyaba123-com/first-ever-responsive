@@ -174,6 +174,66 @@ main section.veiw5 button {
   cursor: pointer;
   text-transform: uppercase;
 }
+main section.veiw6 {
+  padding: 1.1rem;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+main section.veiw6 .cards {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  justify-content: space-between;
+  border-radius: 1rem;
+  width: 100%;
+  background-size: cover;
+  aspect-ratio: 1/1;
+  padding: 2rem 1rem;
+}
+main section.veiw6 .cards .top, main section.veiw6 .cards .bottom {
+  display: flex;
+}
+main section.veiw6 .cards .top {
+  padding: 1rem;
+  justify-content: end;
+  gap: 0.4rem;
+}
+main section.veiw6 .cards .top i {
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgb(103, 98, 98);
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  color: rgb(186, 183, 183);
+  border-radius: 50%;
+  padding: 1rem;
+}
+main section.veiw6 .cards .bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 0rem;
+  flex-direction: row;
+  justify-content: space-between;
+  background: linear-gradient(to right, rgb(130, 122, 107), rgb(215, 213, 213), rgb(130, 122, 107));
+  -webkit-backdrop-filter: blur(2rem);
+          backdrop-filter: blur(2rem);
+  padding: 1.5rem;
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  color: #f4f2ed;
+}
+main section.veiw6 .card1 {
+  background-image: url("./veiw6img1.png");
+}
+main section.veiw6 .card2 {
+  background-image: url("./veiw6img1.png");
+}
+main section.veiw6 .card3 {
+  background-image: url("./veiw6img1.png");
+}
 
 @media (min-width: 700px) and (max-width: 1100px) {
   main section.veiw1 .bottom {
